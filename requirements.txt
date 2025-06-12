@@ -1,0 +1,12 @@
+agno==1.6.0
+groq>=0.1.0
+anyio>=3.7.0
+python-dotenv>=1.0.0
+yfinance==0.2.30
+beautifulsoup4==4.12.2
+requests>=2.31.0
+urllib3>=1.21.1
+fastapi>=0.100.0
+uvicorn>=0.24.0
+sqlalchemy>=2.0.0
+duckduckgo-search>=2024.1.1
