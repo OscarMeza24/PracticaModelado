@@ -30,10 +30,10 @@ jobs:
           action: upload
           app_location: /
           api_location: ''
-          output_location: ./out
+          output_location: ".next"
+          app_build_command: "pnpm run build"
           skip_app_build: false
-          skip_api_build: false
-          app_artifact_location: "./out"
+          skip_api_build: true
           deployment_environment: production
           production_branch: main
-          app_build_command: "pnpm run build"
+          app_artifact_location: "./out"
