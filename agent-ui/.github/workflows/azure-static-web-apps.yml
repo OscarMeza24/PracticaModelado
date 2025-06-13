@@ -37,11 +37,11 @@ jobs:
           action: upload
           app_location: /
           api_location: ''
-          output_location: ".next"
+          output_location: "dist"
           skip_app_build: false
           skip_api_build: true
           deployment_environment: production
           production_branch: main
-          app_artifact_location: ".next"
+          app_artifact_location: "dist"
           skip_deploy_on_missing_secrets: false
           verbose: true
