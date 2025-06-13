@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -151,7 +150,9 @@ const Heading6 = ({ className, ...props }: HeadingProps) => (
 const Img = ({ src, alt }: ImgProps) => {
   const [error, setError] = useState(false)
 
-  if (!src) return null
+  if (!src) {
+    return null
+  }
 
   return (
     <div className="w-full max-w-xl">
@@ -169,12 +170,13 @@ const Img = ({ src, alt }: ImgProps) => {
       ) : (
         <Image
           src={src}
-          width={96}
-          height={56}
-          alt={alt ?? 'Rendered image'}
-          className="size-full rounded-md object-cover"
-          onError={() => setError(true)}
-          unoptimized
+          alt={alt || ''}
+          width={800}
+          height={400}
+          className="rounded-md"
+          onError={() => {
+            setError(true)
+          }}
         />
       )}
     </div>

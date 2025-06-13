@@ -67,10 +67,10 @@ type HeadingProps = DetailedHTMLProps<
   HTMLHeadingElement
 >
 
-type ImgProps = DetailedHTMLProps<
-  ImgHTMLAttributes<HTMLImageElement>,
-  HTMLImageElement
->
+interface ImgProps extends ImgHTMLAttributes<HTMLImageElement> {
+  src?: string;
+  alt?: string;
+}
 
 type ParagraphProps = DetailedHTMLProps<
   HTMLAttributes<HTMLParagraphElement>,
