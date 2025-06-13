@@ -23,7 +23,7 @@ response = client.chat.completions.create(
 )
 
 web_agent = Agent(
-    name="Web Agent",
+    name="Oscar Meza",
     model=Groq(id="llama-3.3-70b-versatile"),
     tools=[DuckDuckGoTools()],
     instructions=["Always include sources"],
@@ -40,7 +40,7 @@ web_agent = Agent(
 )
 
 finance_agent = Agent(
-    name="Finance Agent",
+    name="Andres Mera",
     model=Groq(id="llama-3.3-70b-versatile"),
     tools=[YFinanceTools(stock_price=True, analyst_recommendations=True, company_info=True, company_news=True)],
     instructions=["Always use tables to display data"],
